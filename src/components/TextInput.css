@@ -1,0 +1,19 @@
+.TextInput__Input {
+    width: 260px;
+    height: 36px;
+    border-radius: 20px;
+    padding: 0px 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.TextInput__Label {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.TextInput__Container {
+    margin-bottom: 20px;
+}

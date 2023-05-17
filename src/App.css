@@ -2,12 +2,24 @@
   text-align: center;
   background-color: #c0d0eb;
   width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.Footer {
+  background-color: #c0d0eb;
+  color: #274e8c;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  text-align: right;
+  font-size: 14px;
 }
 #canvas {
   position: absolute;
   display: flex;
   height: 100vh;
   width: 100vw;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -46,6 +58,7 @@
   -webkit-box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.57); 
   box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.57);
   max-width: 400px;
+  min-width: 300px;
 }
 
 .Panel__Container__centered {

@@ -27,9 +27,13 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
+    <><div className="App">
       <RouterProvider router={router} />
     </div>
+    <div className="Footer">
+      created by Cristiano Schiaffella
+    </div>
+    </>
   );
 }
 
