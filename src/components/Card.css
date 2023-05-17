@@ -1,0 +1,13 @@
+.Card__Container img{
+    width: 140px;
+}
+
+.Card__Container img{
+    transition: 0.2s all ease-in-out;
+}
+
+.Card__Container img:hover {
+    transform: scale(1.1);
+    -webkit-filter: drop-shadow(5px 5px 5px #111);
+    filter:         drop-shadow(5px 5px 5px #111); 
+}
