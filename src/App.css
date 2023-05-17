@@ -33,7 +33,7 @@
   }
 }
 
-.ButtonLink__Container {
+.ButtonLink__Container__enabled {
   color: #8f611f;
   background-color: #F4B860;
   text-decoration: none;
@@ -44,6 +44,20 @@
   margin: 8px;
   -webkit-box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.57); 
   box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.57);
+}
+
+.ButtonLink__Container__disabled {
+  color: grey;
+  background-color: lightgrey;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  border-radius: 20px;
+  margin: 8px;
+  -webkit-box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.57); 
+  box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.57);
+  pointer-events: none;
 }
 
 .ButtonLink__Content {

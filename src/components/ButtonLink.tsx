@@ -5,10 +5,11 @@ import {
 
 function Button(props: {
     to: string,
-    children: React.ReactNode
+    children: React.ReactNode,
+    disabled?: boolean
 }) {
     return (
-        <Link className="ButtonLink__Container" to={props.to}>
+        <Link className={"ButtonLink__Container__" + (props.disabled ? "disabled" : "enabled")} to={props.to}>
             <div className="ButtonLink__Content">
                 {props.children}
             </div>

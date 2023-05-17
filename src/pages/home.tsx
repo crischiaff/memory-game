@@ -6,7 +6,16 @@ import ButtonLink from '../components/ButtonLink';
 import Panel from '../components/Panel';
 import TextInput from '../components/TextInput';
 import './home.css'
+import useUserStore from '../stores/userStore';
+import { shallow } from 'zustand/shallow'
+
 function Home() {
+
+    const name = useUserStore(
+        (state: any) => state.name
+    )
+
+
     return (
         
         <div className="Home__Container">
@@ -20,13 +29,13 @@ function Home() {
                 
                 <TextInput
                     label="Inserisci il tuo nome:"
-                    value="Paolino"
+                    value={name}
                     onChange={(e) => {
-
+                        useUserStore.setState({name: e.target.value})
                     }}
                 />
                 <ButtonLink to="/level">Start game</ButtonLink>
-                <ButtonLink to="/leaderboard">Leaderboard</ButtonLink>
+                <ButtonLink to="/leaderboard" disabled>Leaderboard</ButtonLink>
             
             </Panel>
         </div>
