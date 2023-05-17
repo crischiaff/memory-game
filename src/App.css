@@ -7,12 +7,15 @@
   justify-content: center;
 }
 .Footer {
-  background-color: #c0d0eb;
-  color: #274e8c;
+  color: white;
   padding-right: 20px;
   padding-bottom: 8px;
   text-align: right;
   font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-weight: 800;
 }
 #canvas {
   position: absolute;

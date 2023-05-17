@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/home';
 import Level from './pages/level';
 import Leaderboard from './pages/leaderboard';
+import backgroundImg from './assets/Background.png'
 
 import {
   createBrowserRouter,
@@ -27,7 +28,14 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <><div className="App">
+    <><div
+        className="App"
+        style={{
+          backgroundImage: `url(${backgroundImg})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
+        }}
+      >
       <RouterProvider router={router} />
     </div>
     <div className="Footer">
