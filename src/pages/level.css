@@ -34,3 +34,17 @@
   justify-content: center;
   align-items: center;
 }
+.Level__Complete {
+    position: absolute;
+    background-color: #2b6eb5;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 20px;
+    -webkit-box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.57); 
+    box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.57);
+    color: white;
+}

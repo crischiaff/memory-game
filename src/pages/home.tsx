@@ -1,13 +1,9 @@
 import React from 'react';
-import {
-    Link,
-  } from "react-router-dom";
 import ButtonLink from '../components/ButtonLink';
 import Panel from '../components/Panel';
 import TextInput from '../components/TextInput';
 import './home.css'
 import useUserStore from '../stores/userStore';
-import { shallow } from 'zustand/shallow'
 
 function Home() {
 
